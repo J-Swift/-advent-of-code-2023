@@ -34,9 +34,10 @@ main() {
  (str/split input #"\n"))
 
 (defn main []
-  (let
-    [input (parseInput (loadInput))]
-    ...
+  (let [input (parseInput (loadInput))]
+    (->> input
+      ...
+      println)
     ))
 
 (main)

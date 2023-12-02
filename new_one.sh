@@ -27,16 +27,16 @@ main() {
         cat << EOF  > "${path}/run_it.clj"
 (require '[clojure.string :as str])
 
-(defn loadInput []
+(defn load-input []
   (slurp "input_test.txt"))
 
-(defn parseInput [input]
+(defn parse-input [input]
  (str/split input #"\n"))
 
 (defn main []
-  (let [input (parseInput (loadInput))]
+  (let [input (parse-input (load-input))]
     (->> input
-      ...
+      ;; ...
       println)
     ))
 
